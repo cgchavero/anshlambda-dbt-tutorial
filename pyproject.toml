@@ -1,0 +1,20 @@
+[project]
+name = "anshlambda-dbt-tutorial"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Cesar Granjeno GMAIL", email = "cgchavero@gmail.com" }
+]
+requires-python = ">=3.12.15"
+dependencies = [
+    "dbt-core>=1.12.5",
+    "dbt-databricks>=1.12.6",
+]
+
+[project.scripts]
+anshlambda-dbt-tutorial = "anshlambda_dbt_tutorial:main"
+
+[build-system]
+requires = ["uv_build>=0.12.22,<0.13.0"]
+build-backend = "uv_build"
