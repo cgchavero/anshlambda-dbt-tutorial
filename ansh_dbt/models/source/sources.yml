@@ -1,0 +1,19 @@
+version: 2
+sources:
+  - name: source
+    database: dbt_tutorial_dev
+    schema: source
+    description: "This is the source schema containing raw data."
+    tables:
+      - name: fact_sales
+        description: "This table contains sales information."
+      - name: fact_returns
+        description: "This table contains return information."
+      - name: dim_date
+        description: "This table contains date information."
+      - name: dim_store
+        description: "This table contains store information."
+      - name: dim_product
+        description: "This table contains product information."
+      - name: dim_customer
+        description: "This table contains customer information."
